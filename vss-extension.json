@@ -1,0 +1,40 @@
+{
+    "manifestVersion": 1,
+    "id": "SetRetention",
+    "name": "Set Retention",
+    "version": "0.1.9",
+    "publisher": "wkalter",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "A task that adds or updates the retention lease for the pipeline",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "Retention",
+        "Lease"
+    ],
+    "icons": {
+        "default": "icon.png"        
+    },
+    "files": [
+        {
+            "path": "SetRetention"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "SetRetention",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "SetRetention"
+            }
+        }
+    ]
+}
